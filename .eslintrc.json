@@ -1,0 +1,52 @@
+{
+	"env": {
+		"es6": true,
+		"node": true,
+		"jest": true
+	},
+	"parserOptions": {
+		"ecmaVersion": 2018,
+		"sourceType": "module"
+	},
+	"rules": {
+		"array-bracket-spacing": "warn",
+		"no-undef": "error",
+		"no-unused-vars": "error",
+		"arrow-spacing": "warn",
+		"key-spacing": "warn",
+		"comma-style": [
+			2,
+			"last"
+		],
+		"no-dupe-args": "error",
+		"no-dupe-keys": "error",
+		"arrow-parens": "error",
+		"block-spacing": "warn",
+		"computed-property-spacing": "warn",
+		"curly": [
+			"warn"
+		],
+		"default-case": "error",
+		"global-require": "warn",
+		"keyword-spacing": "warn",
+		"new-cap": [
+			"error",
+			{
+				"newIsCap": true,
+				"capIsNew": false
+			}
+		],
+		"new-parens": "error",
+		"no-const-assign": "error",
+		"no-debugger": "error",
+		"no-dupe-class-members": "error",
+		"no-duplicate-case": "error",
+		"no-duplicate-imports": "error",
+		"no-empty": "error",
+		"no-invalid-regexp": "error",
+		"no-invalid-this": "error",
+		"no-shadow": "warn",
+		"object-property-newline": "off",
+		"vars-on-top": "warn"
+	}
+}
