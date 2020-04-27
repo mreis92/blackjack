@@ -1,5 +1,6 @@
 const expect = require("chai").expect;
 
+const Card = require("../models/card");
 const CardDeck = require("../models/cardDeck");
 
 describe("test blackjack data structures", () => {
@@ -18,6 +19,15 @@ describe("test blackjack data structures", () => {
         expect(shuffledDeck.length).equal(52);
 
         expect(shuffledDeck).to.not.be.eql(deck);
+    })
+
+    it("test card initialization", () => {
+        const cardDeck = new CardDeck("H2,H3,S4");
+
+        expect(cardDeck.deck.length).equal(3);
+        cardDeck.deck.forEach((card) => {
+            expect(card).to.be.an.instanceOf(Card);
+        })
     })
 
     it("test card dealing", () => {

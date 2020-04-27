@@ -118,4 +118,21 @@ describe("test dealer", () => {
 
         expect(result).equal(false);
     })
+
+    it("test if dealer has lost - table win first round", () => {
+        player.wins = true;
+        dealer.hand = [new Card("H", "K"), new Card("C", "A")];
+        dealer.score = dealer.getHandValue();
+        const result = dealer.hasPlayerLost([player]);
+
+        expect(result).equal(true);
+    })
+
+    it("test if dealer has lost - dealer bust", () => {
+        dealer.hand = [new Card("H", "K"), new Card("C", "6"), new Card("H", "7")];
+        dealer.score = dealer.getHandValue();
+        const result = dealer.hasPlayerLost([player]);
+
+        expect(result).equal(true);
+    })
 })
