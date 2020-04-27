@@ -101,3 +101,12 @@ async function startProgram() {
 
 startProgram();
 
+
+module.exports = {
+    dealFirstHand,
+    dealRemainingHands,
+    printGameWinner,
+    printPlayerHands,
+    playBlackjack,
+    startProgram,
+}
